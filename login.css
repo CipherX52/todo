@@ -1,0 +1,32 @@
+body{
+    background-image:url("bg.jpg") !important;
+    background-size: cover;
+}
+
+.card{
+    padding:20px;
+    width:40%;
+}
+
+.card .card-header{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.card .card-footer{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.card-footer a{
+    text-decoration: none;
+}
+
+.btn{
+    width:50%;
+}
+
+.warn{
+    margin-left: 10px;
+    color:red;
+}
