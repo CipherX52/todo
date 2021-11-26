@@ -1,6 +1,8 @@
 body{
     background-image: url("./bg.jpg");
     background-size: cover;
+    max-width: 100%;
+    overflow-x:hidden;
 }
 
 .hover-underline-animation {
@@ -26,3 +28,21 @@ body{
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+#content{
+  height:82vh;
+  margin-top:2vh;
+  width:60%;
+  overflow-x:hidden;
+  overflow-y:auto;
+  background-color:peachpuff;
+  padding:10px;
+  visibility:hidden;
+}
+
+#head{
+  margin-left:20%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  visibility:hidden;
+  /* color: ; */
+}
