@@ -1,5 +1,6 @@
-let form = document.getElementById("loginform");
-form.addEventListener("submit",validate);
+// let form = document.getElementById("loginform");
+// form.addEventListener("submit",validate);
+document.getElementById("submitBtn").addEventListener("click",validate);
 
 function validate(){
     init();
@@ -10,7 +11,8 @@ function validate(){
     if (username.value.trim() == "admin" && password.value == "12345"){
         username.classList.add("is-valid");
         password.classList.add("is-valid");
-        window.setTimeout(redirect,300);
+        // window.setTimeout(redirect,300);
+        return true;
     }
     else if (username.value.trim() == "admin" && password.value != "12345"){
         wrongPass();
@@ -20,6 +22,7 @@ function validate(){
     else{
         wrongName();
         wrongPass();
+        return false;
     }
 
 }
@@ -34,7 +37,7 @@ function wrongName(){
 }
 
 function wrongPass(){   
-    document.getElementById("warn2").innerText = "Invalid password";
+    document.getElementById("warn2").innerText = "Incorrect password";
     document.querySelector("#floatingPassword").classList.add("is-invalid");
 }
 
